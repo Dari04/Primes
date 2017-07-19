@@ -1,0 +1,313 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans'
+}
+#portafolio{
+	padding: 4.5% 5% 10% 5%;
+}
+#portafolio ul{
+	margin: 2% 0 2% 0;
+}
+#portafolio ul a{
+	text-decoration: none;
+	padding: 1% 1%;
+	font-size: 1em;
+	font-weight: bold;
+	background-color: #fff;
+}
+#portafolio ul a:hover{
+	background-color: #0DC0C0;
+	color: white;
+	border-radius: 0%;
+}
+/* Common style */
+.imagen figure {
+	position: relative;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	margin-top: 3%;
+}
+.imagen figure img {
+	position: relative;
+	display: block;
+	opacity: 0.8;
+}
+.imagen figure figcaption {
+	padding: 2em;
+	color: #fff;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.imagen figure figcaption::before,
+.imagen figure figcaption::after {
+	pointer-events: none;
+}
+
+.imagen figure figcaption,
+.imagen figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.imagen figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+.imagen figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+.imagen figure h2,
+.imagen figure p {
+	margin: 0;
+}
+
+.imagen figure p {
+	color: white;
+	    font-size: 1.1em;
+    padding-bottom: 0.8%;
+    padding-top: 0.8%;
+}
+
+figcaption i{
+	color: white;
+}
+figcaption i:hover{
+	color: #0DC0C0;
+}
+figure.effect-phoebe {
+	background: gray;
+}
+
+figure.effect-phoebe img {
+	opacity: 0.85;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-phoebe:hover img {
+	opacity: 0.6;
+}
+.btn1{
+	    padding: 4% 2% 2% 2%;
+}
+.load{
+	background-color: #6E6E6E;
+	padding: 1%;
+	border-radius: 3%;
+}
+.col-12 .load{
+	text-decoration: none;
+	color: white;
+}
+.col-12 .load:hover{
+	background-color: transparent;
+	color: #0DC0C0;
+	border: solid #0DC0C0 2px;
+}
+
+
+figure.effect-phoebe figcaption::before {
+	position: absolute;
+	content: '';
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(5,2.5,1);
+	transform: scale3d(5,2.5,1);
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+figure.effect-phoebe:hover figcaption::before {
+	opacity: 0.6;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+figure.effect-phoebe h2 {
+	margin-top: 1em;
+	-webkit-transition: transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+
+figure.effect-phoebe:hover h2 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-phoebe p a {
+	color: #fff;
+	font-size: 140%;
+	opacity: 0;
+	position: relative;
+	display: inline-block;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-phoebe p a:first-child {
+	-webkit-transform: translate3d(-60px,-60px,0);
+	transform: translate3d(-60px,-60px,0);
+}
+
+figure.effect-phoebe p a:nth-child(2) {
+	-webkit-transform: translate3d(0,60px,0);
+	transform: translate3d(0,60px,0);
+}
+
+figure.effect-phoebe p a:nth-child(3) {
+	-webkit-transform: translate3d(60px,-60px,0);
+	transform: translate3d(60px,-60px,0);
+}
+
+figure.effect-phoebe:hover p a {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+.call .ciudad{
+	width: 100%;
+	height: 550px;
+	background-image: url("../img/background/city.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.ciudad p a{
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	padding: 1%;
+	border: solid white 2px;
+	margin-top: 5%;
+	font-weight: bolder;
+	font-size: 1.3em;
+}
+
+.call h3{
+	font-size: 29px;
+	padding-left: 1.1%;
+	padding-right:1.1%;
+	line-height: 1.5;
+}
+.opacity2{
+	height: 550px;
+	background-color: rgba(0, 0, 0, 0.52);
+}
+.opacity2 .ultimo{
+	margin: 5%;
+}
+.ultimo a:hover{
+	background-color: #0DC0C0;
+	font-weight: bolder;
+	color: white;
+	border: none;
+}
+#price{
+	padding-top: 2%;
+	padding-bottom: 5%;
+	height: auto;
+}
+#price h2{
+	    color: #7A7A7A;
+    font-size: 2.5em;
+    padding-top: 4%;
+    padding-bottom: 1%;
+}
+#price .precio{
+	background-color: #fff;
+	padding: 2% 2% 0.5% 2%;
+	margin-top: 3%;
+	border: 1.5px solid rgb(244, 244, 244);
+	box-shadow: rgba(0, 0, 0, 0.74902) 6px 5px 32px -6px;
+
+    margin: 2% 9px;
+}
+
+.shadw .col-12{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titulo{
+	width: 100%;
+	background-color: #323A45;
+	height: 80px;
+	padding: 8%;
+}
+.premium{
+	width: 100%;
+	background-color: #0DC0C0;
+	height: 80px;
+	padding: 8%;
+}
+.money{
+	width: 100%;
+	background-color: #F0F0F0;
+	height:140px;
+	padding: 15%;
+}
+.money span{
+	font-size: 2em;
+}
+.descripcion{
+	background-color: #fff;
+	padding-bottom: 5%;
+	border: solid 2px #fff;
+}
+.descripcion ul{
+	padding-left: 6%;
+	padding-right: 6%;
+}
+.descripcion ul li{
+	list-style: none;
+	border-bottom: solid #F0F0F0 1px;
+	margin:8%;
+	padding-bottom: 8%;
+}
+.descripcion ul li:last-child{
+	padding-bottom: 8%;
+	padding-top: 4%;
+}
+.precio a{
+	padding: 4% 11%;
+	background-color:#2D323A;
+	border: solid #2D323A 1px; 
+	color: #fff;
+}
+.precio a:hover{
+	background-color: #0DC0C0;
+	color: #fff;
+	border: none;
+}
+#personaje{
+	padding:2%;
+
+}
+#personaje img{
+	width: 8%;
+	border-radius: 100%;
+	margin: 2%;
+}
+
+
+#portafolio h1{
+	color: #7A7A7A;
+	font-size: 2.5em;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
